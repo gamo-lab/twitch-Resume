@@ -1,0 +1,102 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #ab2d96 23%,  50%, #18669e 80%);
+    background-size: cover;
+    background-attachment: fixed;
+    line-height: 2;
+    padding: 20px;
+}
+
+.resume {
+  max-width: 900px;
+  margin: auto;
+  background: white;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  border-bottom: 2px solid #e5e5e5;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+
+.profile-pic img {
+  width: 150px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 0;
+  margin-right: 20px;
+}
+
+.info h1 {
+  font-size: 28px;
+  color: #222;
+}
+
+.info h2 {
+  font-size: 18px;
+  color: #135596;
+  margin-bottom: 10px;
+}
+
+.contact {
+  font-size: 14px;
+  color: #666;
+  margin-top: 10px;
+}
+
+.columns {
+  display: flex;
+  gap: 30px;
+}
+
+.left-col, .right-col {
+  flex: 1;
+}
+
+h3 {
+  background: #25a4e9;
+  padding: 6px 10px;
+  margin-bottom: 10px;
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.item {
+  margin-bottom: 15px;
+}
+
+.item ul {
+  list-style: disc inside;
+  margin-top: 5px;
+}
+
+ul {
+  list-style: square inside;
+  margin-top: 5px;
+  margin-left: 10px;
+}
+
+@media (max-width: 768px) {
+  .columns {
+    flex-direction: column;
+  }
+  .header {
+    flex-direction: column;
+    text-align: center;
+  }
+  .profile-pic {
+    margin-bottom: 10px;
+  }
+}
